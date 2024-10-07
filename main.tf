@@ -61,7 +61,6 @@ resource "azurerm_windows_virtual_machine" "example" {
 
   os_disk {
     caching              = "ReadWrite"
-    create_option        = "FromImage"
     managed_disk_type    = "Standard_LRS"
   }
 
