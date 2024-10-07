@@ -59,11 +59,6 @@ resource "azurerm_windows_virtual_machine" "example" {
     azurerm_network_interface.example.id,
   ]
 
-  os_disk {
-    caching              = "ReadWrite"
-    managed_disk_type    = "Standard_LRS"
-  }
-
   source_image_reference {
     publisher = "MicrosoftWindowsServer"
     offer     = "WindowsServer"
